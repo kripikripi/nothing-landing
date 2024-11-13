@@ -29,3 +29,12 @@
     gap: 15px;
   }
 }
+
+.contact {
+  margin-top: 120px;
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
