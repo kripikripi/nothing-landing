@@ -61,18 +61,18 @@
         </div>
         <div class="menu__content">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#">Products</a></li>
-            <li class="menu__item"><a href="#">Store</a></li>
+            <li class="menu__item"><a href="#recommended">Products</a></li>
+            <li class="menu__item"><a href="#categories">Store</a></li>
             <li class="menu__item"><a href="#">Login</a></li>
             <li class="menu__item"><a href="#">Cart</a></li>
           </ul>
           <p class="menu__phone">
             <span>+1 234 5555-55-55</span>
-            <span>call to order</span>
+            <a class="menu__call" href="#contact">call to order</a>
           </p>
         </div>
       </menu>
-      <main class="recommended">
+      <main class="recommended" id="recommended">
         <h2 class="recommended__headline">
           Made for <span>you</span>, not your data
         </h2>
@@ -160,37 +160,39 @@
         </div>
         <button class="categories__button">View all</button>
       </section>
-      <footer class="footer">
-        <div class="footer__container">
-          <img
-            class="footer__image"
-            src="./images/footer.png"
-            alt="footer image"
-          />
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          class="footer__image"
+          src="./images/footer.png"
+          alt="footer image"
+        />
+      </div>
+      <section class="footer__about">
+        <h2 class="footer__title">About us</h2>
+        <div class="footer__text">
+          <span>
+            We’re a London-based tech company on a mission to <br />
+            remove barriers between people and technology.
+          </span>
+          <span>
+            To do this, we’re crafting intuitive, flawlessly <br />
+            connected products that improve our lives without <br />
+            getting in the way. <br />
+            No confusing tech-speak. No silly product names.
+            <br />
+            Just artistry, passion and trust. And products <br />
+            we’re proud to share with our friends and family. <br />
+            Simple.
+          </span>
+          <span>Because beautiful tech shouldn’t be complicated.</span>
         </div>
-        <section class="footer__about">
-          <h2 class="footer__title">About us</h2>
-          <div class="footer__text">
-            <span>
-              We’re a London-based tech company on a mission to <br />
-              remove barriers between people and technology.
-            </span>
-            <span>
-              To do this, we’re crafting intuitive, flawlessly <br />
-              connected products that improve our lives without <br />
-              getting in the way. <br />
-              No confusing tech-speak. No silly product names.
-              <br />
-              Just artistry, passion and trust. And products <br />
-              we’re proud to share with our friends and family. <br />
-              Simple.
-            </span>
-            <span>Because beautiful tech shouldn’t be complicated.</span>
-          </div>
-        </section>
-      </footer>
-      <section class="contact">
-        <h2 class="contact__title">Contact us</h2>
+      </section>
+    </footer>
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Contact us</h2>
+      <div class="contact__container">
         <form class="contact__form">
           <input
             class="contact__name"
@@ -205,9 +207,9 @@
             required
           />
           <input
-            class="contact__phone"
+            class="contact__message"
             type=" text"
-            placeholder="Phone"
+            placeholder="Message"
             required
           />
           <input
@@ -217,11 +219,24 @@
             required
           />
         </form>
-        <div>
-          <span>Phone</span>
-          <span class="contact__phone">+1 234 5555-55-55</span>
+        <div class="contact__contacts">
+          <div class="contact__contact">
+            <h3 class="contact__headline">Phone</h3>
+            <span class="contact__text">+1 234 5555-55-55</span>
+          </div>
+          <div class="contact__contact">
+            <h3 class="contact__headline">Email</h3>
+            <span class="contact__text">hello@nothing.com</span>
+          </div>
+          <div class="contact__contact">
+            <h3 class="contact__headline">Address</h3>
+            <span class="contact__text">
+              400 first ave. <br />suite 700 <br />
+              Minneapolis, MN 55401
+            </span>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

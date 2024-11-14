@@ -58,9 +58,14 @@
     line-height: 22.4px;
     letter-spacing: 2px;
 
-    span:last-child {
-      text-decoration: underline;
-      text-transform: uppercase;
+
+  }
+  &__call {
+    color: $text-color;
+    text-decoration: underline;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
     }
   }
 }

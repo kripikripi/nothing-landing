@@ -1,5 +1,6 @@
 .categories {
   padding: 0 $content-padding;
+  scroll-snap-align: start;
   h2 {
     font-size: 48px;
     font-weight: 700;
