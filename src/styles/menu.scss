@@ -15,18 +15,21 @@
   &:target {
     transform: translate(-0%);
   }
+
   &__top {
     height: 96px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__content {
     margin-top: 56px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   &__list {
     list-style: none;
     display: flex;
@@ -39,15 +42,18 @@
     line-height: 22px;
     letter-spacing: 2px;
   }
+
   &__item {
     a {
       text-decoration: none;
       color: $text-color;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
+
   &__phone {
     margin-top: 48px;
     display: flex;
@@ -57,15 +63,35 @@
     font-weight: 700;
     line-height: 22.4px;
     letter-spacing: 2px;
-
-
   }
+
   &__call {
     color: $text-color;
     text-decoration: underline;
     text-transform: uppercase;
+
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .menu {
+    padding: 0 $content-padding-tablet;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu {
+    &__logo {
+      max-width: 125px;
+    }
+
+    &__content {
+      margin-top: 32px;
+    }
+
+    padding: 0 $content-padding-mobile;
   }
 }

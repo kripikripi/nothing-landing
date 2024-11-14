@@ -10,22 +10,26 @@
   flex-direction: column;
   justify-content: space-between;
   scroll-snap-align: start;
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 96px;
   }
+
   &__title {
     font-size: 56px;
     font-weight: 700;
-    margin-bottom: 96px;
+    margin-bottom: 92px;
     color: $text-color;
   }
+
   &__phone {
     display: flex;
     align-items: center;
     gap: 8px;
+
     &:hover::before {
       content: "+1 234 555-55-55";
       font-family: Inter, sans-serif;
@@ -34,18 +38,51 @@
       letter-spacing: 2px;
     }
   }
+
   &__icons {
     display: flex;
     gap: 32px;
   }
+
   &__burger {
     display: block;
     width: 32px;
     height: 32px;
     background: url(/src/images/icons/Icon-Burger-menu.png) no-repeat center;
+
     &:hover {
-      background: url(/src/images/icons/Icon-Burger-menu-hover.png) no-repeat
-        center;
+      background: url(/src/images/icons/Icon-Burger-menu-hover.png) no-repeat center;
     }
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .header {
+    &__title {
+      font-size: 48px;
+      margin-bottom: 65px;
+    }
+
+    padding: 0 $content-padding-tablet;
+    background-image: url(/src/images/header-744.png);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    &__logo {
+      max-width: 125px;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    &__icons {
+      gap: 24px;
+    }
+
+    padding: 0 $content-padding-mobile;
   }
 }

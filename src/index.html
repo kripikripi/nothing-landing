@@ -41,7 +41,11 @@
   <body>
     <header class="header" id="header">
       <div class="header__top">
-        <img src="./images/logo.png" alt="Nothing logo" />
+        <img
+          class="header__logo"
+          src="./images/logo.png"
+          alt="Nothing logo"
+        />
         <div class="header__icons">
           <div class="header__phone">
             <img src="./images/icons/Icon-Phone-call.png" alt="phone icon" />
@@ -49,12 +53,19 @@
           <a class="header__burger" href="#menu"> </a>
         </div>
       </div>
-      <h1 class="header__title">Bring joy back to <br />the everyday</h1>
+      <h1 class="header__title">
+        Bring joy back <br />
+        to the everyday
+      </h1>
     </header>
     <div class="container">
       <menu class="menu" id="menu">
         <div class="menu__top">
-          <img src="./images/logo.png" alt="Nothing logo" />
+          <img
+            class="menu__logo"
+            src="./images/logo.png"
+            alt="Nothing logo"
+          />
           <a href="#header">
             <img src="./images/icons/Icon-Close.png" alt="Close menu" />
           </a>
@@ -107,50 +118,50 @@
         </div>
       </main>
       <section class="categories" id="categories">
-        <h2>
+        <span class="categories__title">
           Browse Nothing <br />
           products by category
-        </h2>
+        </span>
         <div class="categories__items">
           <article class="categories__item">
             <div class="categories__imgs">
               <img
-                class="imgs__wide"
+                class="categories__wide"
                 src="./images/allproducts-1.png"
                 alt="two birds sitting on the phone"
               />
               <img
-                class="imgs__square"
+                class="categories__square"
                 src="./images/allproducts-2.png"
                 alt="earbuds"
               />
             </div>
-            <h3>Headphones & earbuds</h3>
+            <h3>All products</h3>
           </article>
           <article class="categories__item">
             <div class="categories__imgs">
               <img
-                class="imgs__square"
+                class="categories__square"
                 src="./images/audio-1.png"
                 alt="earphone"
               />
               <img
-                class="imgs__wide"
+                class="categories__wide"
                 src="./images/audio-2.png"
                 alt="earphones"
               />
             </div>
-            <h3>Speakers</h3>
+            <h3>Audio</h3>
           </article>
           <article class="categories__item">
             <div class="categories__imgs">
               <img
-                class="imgs__wide"
+                class="categories__wide"
                 src="./images/accesories-1.png"
                 alt="phone (1) with the case"
               />
               <img
-                class="imgs__square"
+                class="categories__square"
                 src="./images/accesories-2.png"
                 alt="charging brick"
               />
@@ -169,74 +180,76 @@
           alt="footer image"
         />
       </div>
-      <section class="footer__about">
-        <h2 class="footer__title">About us</h2>
-        <div class="footer__text">
-          <span>
-            We’re a London-based tech company on a mission to <br />
-            remove barriers between people and technology.
-          </span>
-          <span>
-            To do this, we’re crafting intuitive, flawlessly <br />
-            connected products that improve our lives without <br />
-            getting in the way. <br />
-            No confusing tech-speak. No silly product names.
-            <br />
-            Just artistry, passion and trust. And products <br />
-            we’re proud to share with our friends and family. <br />
-            Simple.
-          </span>
-          <span>Because beautiful tech shouldn’t be complicated.</span>
-        </div>
-      </section>
-    </footer>
-    <section class="contact" id="contact">
-      <h2 class="contact__title">Contact us</h2>
-      <div class="contact__container">
-        <form class="contact__form">
-          <input
-            class="contact__name"
-            type=" text"
-            placeholder="Name"
-            required
-          />
-          <input
-            class="contact__email"
-            type=" text"
-            placeholder="Email"
-            required
-          />
-          <input
-            class="contact__message"
-            type=" text"
-            placeholder="Message"
-            required
-          />
-          <input
-            class="contact__submit"
-            type="submit"
-            value="Send"
-            required
-          />
-        </form>
-        <div class="contact__contacts">
-          <div class="contact__contact">
-            <h3 class="contact__headline">Phone</h3>
-            <span class="contact__text">+1 234 5555-55-55</span>
-          </div>
-          <div class="contact__contact">
-            <h3 class="contact__headline">Email</h3>
-            <span class="contact__text">hello@nothing.com</span>
-          </div>
-          <div class="contact__contact">
-            <h3 class="contact__headline">Address</h3>
-            <span class="contact__text">
-              400 first ave. <br />suite 700 <br />
-              Minneapolis, MN 55401
+      <div class="footer__content">
+        <section class="footer__about">
+          <h2 class="footer__title">About us</h2>
+          <div class="footer__text">
+            <span>
+              We’re a London-based tech company on a mission to <br />
+              remove barriers between people and technology.
             </span>
+            <span>
+              To do this, we’re crafting intuitive, flawlessly <br />
+              connected products that improve our lives without <br />
+              getting in the way. <br />
+              No confusing tech-speak. No silly product names.
+              <br />
+              Just artistry, passion and trust. And products <br />
+              we’re proud to share with our friends and family. <br />
+              Simple.
+            </span>
+            <span>Because beautiful tech shouldn’t be complicated.</span>
           </div>
-        </div>
+        </section>
+        <section class="contact" id="contact">
+          <h2 class="contact__title">Contact us</h2>
+          <div class="contact__container">
+            <form class="contact__form">
+              <input
+                class="contact__name"
+                type=" text"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="contact__email"
+                type=" text"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="contact__message"
+                type=" text"
+                placeholder="Message"
+                required
+              />
+              <input
+                class="contact__submit"
+                type="submit"
+                value="Send"
+                required
+              />
+            </form>
+            <div class="contact__contacts">
+              <div class="contact__contact">
+                <h3 class="contact__headline">Phone</h3>
+                <span class="contact__text">+1 234 5555-55-55</span>
+              </div>
+              <div class="contact__contact">
+                <h3 class="contact__headline">Email</h3>
+                <span class="contact__text">hello@nothing.com</span>
+              </div>
+              <div class="contact__contact">
+                <h3 class="contact__headline">Address</h3>
+                <span class="contact__text">
+                  400 first ave. <br />suite 700 <br />
+                  Minneapolis, MN 55401
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
