@@ -1,5 +1,6 @@
 .categories {
   padding: 0 $content-padding;
+  margin-top: 128px;
   scroll-snap-align: start;
 
   &__title {
@@ -93,6 +94,7 @@
 @media screen and (max-width: 320px) {
   .categories {
     padding: 0 $content-padding-mobile;
+    margin-top: 96px;
 
     &__title {
       font-size: 32px;
