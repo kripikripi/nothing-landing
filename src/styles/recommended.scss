@@ -27,16 +27,18 @@
   }
 
   &__card {
-    transition: all 400ms;
 
     img {
       border-radius: 4px;
+      transition: all 400ms;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
     }
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-    }
+
   }
 
   &__product {

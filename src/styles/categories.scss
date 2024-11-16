@@ -1,7 +1,8 @@
 .categories {
   padding: 0 $content-padding;
   margin-top: 128px;
-  scroll-snap-align: start;
+
+  // scroll-snap-align: start;
 
   &__title {
     font-size: 48px;
@@ -32,14 +33,17 @@
   &__wide {
     width: 67%;
     border-radius: 4px;
+    transition: all 400ms;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
   }
 
   &__square {
     width: 33%;
     border-radius: 4px;
-  }
-
-  &__item {
     transition: all 400ms;
 
     &:hover {
