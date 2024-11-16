@@ -30,13 +30,13 @@
   }
 
   &__wide {
-    max-width: 67%;
-    overflow: hidden;
+    width: 67%;
+    border-radius: 4px;
   }
 
   &__square {
-    max-width: 33%;
-    overflow: hidden;
+    width: 33%;
+    border-radius: 4px;
   }
 
   &__item {
