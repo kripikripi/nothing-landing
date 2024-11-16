@@ -1,13 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nothing</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/src/images/favicon.png">
   </head>
+
   <body>
-    <h1>Landing Page</h1>
+    <header class="header" id="header">
+      <div class="header__top">
+        <img
+          class="header__logo"
+          src="./images/logo.png"
+          alt="Nothing logo"
+        />
+        <div class="header__icons">
+          <div class="header__phone">
+            <img src="./images/icons/Icon-Phone-call.png" alt="phone icon" />
+          </div>
+          <a class="header__burger" href="#menu"> </a>
+        </div>
+      </div>
+      <h1 class="header__title">
+        Bring joy back <br />
+        to the everyday
+      </h1>
+    </header>
+    <div class="container">
+      <menu class="menu" id="menu">
+        <div class="menu__top">
+          <img
+            class="menu__logo"
+            src="./images/logo.png"
+            alt="Nothing logo"
+          />
+          <a href="#header">
+            <img src="./images/icons/Icon-Close.png" alt="Close menu" />
+          </a>
+        </div>
+        <div class="menu__content">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#recommended">Products</a></li>
+            <li class="menu__item"><a href="#categories">Store</a></li>
+            <li class="menu__item"><a href="#">Login</a></li>
+            <li class="menu__item"><a href="#">Cart</a></li>
+          </ul>
+          <p class="menu__phone">
+            <span>+1 234 5555-55-55</span>
+            <a class="menu__call" href="#contact">call to order</a>
+          </p>
+        </div>
+      </menu>
+      <main class="recommended" id="recommended">
+        <h2 class="recommended__headline">
+          Made for <span>you</span>, not your data
+        </h2>
+        <div class="recommended__cards">
+          <div class="recommended__card">
+            <img src="./images/phone1.png" alt="phone (1)" />
+            <h3 class="recommended__product">Phone (1)</h3>
+            <p class="recommended__description">
+              Through the Glyph Interface, a perfected OS and exceptional dual
+              camera. All startlingly fast.
+            </p>
+            <span class="recommended__price">$ 499.00</span>
+          </div>
+          <div class="recommended__card">
+            <img src="./images/ear(2).png" alt="ear (2)" />
+            <h3 class="recommended__product">Ear (2)</h3>
+            <p class="recommended__description">
+              Perfecting the path from artist to ear. So that music sounds just
+              as it was intended.
+            </p>
+            <span class="recommended__price">$ 149.00</span>
+          </div>
+          <div class="recommended__card">
+            <img src="./images/ear(stick).png" alt="ear (stick)" />
+            <h3 class="recommended__product">Ear (stick)</h3>
+            <p class="recommended__description">
+              Tech you can’t feel. Leaving just space for sound to come to life.
+              Powered by custom sound technology.
+            </p>
+            <span class="recommended__price">$ 119.00</span>
+          </div>
+        </div>
+      </main>
+      <section class="categories" id="categories">
+        <span class="categories__title">
+          Browse Nothing <br />
+          products by category
+        </span>
+        <div class="categories__items">
+          <article class="categories__item">
+            <div class="categories__imgs">
+              <img
+                class="categories__wide"
+                src="./images/allproducts-1.png"
+                alt="two birds sitting on the phone"
+              />
+              <img
+                class="categories__square"
+                src="./images/allproducts-2.png"
+                alt="earbuds"
+              />
+            </div>
+            <h3>All products</h3>
+          </article>
+          <article class="categories__item">
+            <div class="categories__imgs">
+              <img
+                class="categories__square"
+                src="./images/audio-1.png"
+                alt="earphone"
+              />
+              <img
+                class="categories__wide"
+                src="./images/audio-2.png"
+                alt="earphones"
+              />
+            </div>
+            <h3>Audio</h3>
+          </article>
+          <article class="categories__item">
+            <div class="categories__imgs">
+              <img
+                class="categories__wide"
+                src="./images/accesories-1.png"
+                alt="phone (1) with the case"
+              />
+              <img
+                class="categories__square"
+                src="./images/accesories-2.png"
+                alt="charging brick"
+              />
+            </div>
+            <h3>Accessories</h3>
+          </article>
+        </div>
+        <button class="categories__button">View all</button>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          class="footer__image"
+          src="./images/footer.png"
+          alt="footer image"
+        />
+      </div>
+      <div class="footer__content">
+        <section class="footer__about">
+          <h2 class="footer__title">About us</h2>
+          <div class="footer__text">
+            <span>
+              We’re a London-based tech company on a mission to <br />
+              remove barriers between people and technology.
+            </span>
+            <span>
+              To do this, we’re crafting intuitive, flawlessly <br />
+              connected products that improve our lives without <br />
+              getting in the way. <br />
+              No confusing tech-speak. No silly product names.
+              <br />
+              Just artistry, passion and trust. And products <br />
+              we’re proud to share with our friends and family. <br />
+              Simple.
+            </span>
+            <span>Because beautiful tech shouldn’t be complicated.</span>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h2 class="contact__title">Contact us</h2>
+          <div class="contact__container">
+            <form class="contact__form">
+              <input
+                class="contact__name"
+                type=" text"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="contact__email"
+                type=" text"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="contact__message"
+                type=" text"
+                placeholder="Message"
+                required
+              />
+              <input
+                class="contact__submit"
+                type="submit"
+                value="Send"
+                required
+              />
+            </form>
+            <div class="contact__contacts">
+              <div class="contact__contact">
+                <h3 class="contact__headline">Phone</h3>
+                <span class="contact__text">+1 234 5555-55-55</span>
+              </div>
+              <div class="contact__contact">
+                <h3 class="contact__headline">Email</h3>
+                <span class="contact__text">hello@nothing.com</span>
+              </div>
+              <div class="contact__contact">
+                <h3 class="contact__headline">Address</h3>
+                <span class="contact__text">
+                  400 first ave. <br />suite 700 <br />
+                  Minneapolis, MN 55401
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

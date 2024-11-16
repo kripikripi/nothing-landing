@@ -1,0 +1,102 @@
+.recommended {
+  margin-top: 120px;
+  padding: 0 $content-padding;
+  color: $text-color;
+  scroll-snap-align: start;
+
+  &__headline {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+
+    span {
+      font-style: italic;
+    }
+
+    span:hover {
+      animation: color 2s 1 forwards;
+    }
+  }
+
+  &__cards {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__card {
+    transition: all 400ms;
+
+    img {
+      border-radius: 4px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+
+  &__product {
+    margin: 24px 0 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+  }
+
+  &__description {
+    margin: 8px 0 0;
+    line-height: 22.4px;
+  }
+
+  &__price {
+    display: block;
+    margin-top: 12px;
+    font-weight: 700;
+    line-height: 22.4px;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: $text-color;
+  }
+
+  100% {
+    color: #ca0416;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .recommended {
+    padding: 0 $content-padding-tablet;
+
+    &__headline {
+      font-size: 40px;
+    }
+
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__card {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .recommended {
+    padding: 0 $content-padding-mobile;
+
+    &__headline {
+      font-size: 32px;
+    }
+  }
+
+}

@@ -1,3 +1,21 @@
+@import "variables";
+@import "header";
+@import "menu";
+@import "recommended";
+@import "categories";
+@import "footer";
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
 body {
+  font-family: "Space Grotesk", sans-serif;
   margin: 0;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
 }
