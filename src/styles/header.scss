@@ -31,12 +31,20 @@
     align-items: center;
     gap: 8px;
 
+    &::before {
+      content: "";
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+
     &:hover::before {
       content: "+1 234 555-55-55";
       font-family: Inter, sans-serif;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 2px;
+      transition: opacity 0.4s ease-in-out;
+      opacity: 1;
     }
   }
 
